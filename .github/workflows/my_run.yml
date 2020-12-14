@@ -10,10 +10,8 @@ jobs:
     job1:
       run:
         shell: bash
-        working-directory: scripts
-          shell: bash
-          run: /usr/bin/touch build_success
-          working-directory: ${{runner.workspace}}/build
+        run: /usr/bin/touch build_success
+        working-directory: ${{runner.workspace}}/build
 
 
 
