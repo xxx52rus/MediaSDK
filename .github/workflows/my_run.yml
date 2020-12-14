@@ -1,17 +1,20 @@
-name: CMake
+name: my_first_workflow
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
 
-env:
-  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
-  BUILD_TYPE: Release
 
 jobs:
-    job1:
-      run:
-        shell: bash
-        run: /usr/bin/touch build_success
+  test_push:
+    runs-on: [self-hosted, linux]
+    steps:
+#      - uses: actions/checkout@v2
+#      - uses: actions/setup-node@v1
+#        with:
+#          node-version: 12
+      - run: wall "privet world"
         working-directory: ${{runner.workspace}}/build
-
+        shell: bash
 
 
