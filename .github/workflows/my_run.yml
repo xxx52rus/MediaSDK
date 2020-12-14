@@ -3,8 +3,6 @@ name: my_first_workflow
 on:
   push:
     branches: [ master ]
-
-
 jobs:
   test_push:
     runs-on: [self-hosted, linux]
@@ -13,7 +11,7 @@ jobs:
 #      - uses: actions/setup-node@v1
 #        with:
 #          node-version: 12
-      - run: wall "privet world"
+      - run: /usr/bin/wall "privet world"
         working-directory: ${{runner.workspace}}/build
         shell: bash
 
