@@ -1,6 +1,5 @@
 name: my_first_workflow_
 
-
 on:
   push:
     branches: [ master ]
