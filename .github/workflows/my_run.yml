@@ -8,7 +8,7 @@ jobs:
     runs-on: [self-hosted, linux]
     steps:
     - name: wall_privet_mir
-      run: wall "privet world" 
+      run: echo "privet world" 
       working-directory: ${{runner.workspace}}/build
       shell: bash
 
