@@ -1,5 +1,6 @@
 name: my_first_workflow_
 
+
 on:
   push:
     branches: [ master ]
@@ -9,7 +10,7 @@ jobs:
     steps:
     - name: wall_privet_mir
       run: echo "privet world" 
-      working-directory: ${{runner.workspace}}/build
-      shell: bash
+#      working-directory: ${{runner.workspace}}/build
+#      shell: bash
 
 
